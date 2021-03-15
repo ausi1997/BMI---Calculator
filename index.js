@@ -9,6 +9,8 @@ function getbmiValue(){
     height = height * 0.025  // converting the height in metre
 
     var newBmi = weight / (height*height);
+
+   newBmi =  Math.round(newBmi);
     
     document.getElementById("bmi").value = newBmi;
 }

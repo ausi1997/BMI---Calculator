@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI-Calculator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <div class="container">
         <div class="card">
-            <div class="card-header text-center">BMI-Calculator</div>
+            <div class="card-header text-center" style="background-color: rgb(189, 81, 31);">BMI-Calculator</div>
             <div class="card-body">
-            <form class="w-50 m-auto">
+            <form class="w-50 m-auto" onsubmit="return false">
                 <div class="form-group">
                     <label>Weight:</label>
-                    <input type="number" name="" id="weight" class="form-control">
+                    <input type="number" name="" placeholder="Weight in KG" required id="weight" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Height:</label>
-                    <input type="number" name="" id="height" class="form-control">
+                    <input type="number" name="" placeholder="Height in ft" required id="height" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>BMI Value:</label>
@@ -27,7 +28,7 @@
                 <button type="button" class="btn btn-success" onclick="getbmiValue()">Check BMI</button>
             </form>
             </div>
-            <div class="card-footer text-center">A Healthy BMI range is between 19 & 25</div>
+            <div class="card-footer text-center" style="background-color: rgb(189, 81, 31);">A Healthy BMI range is between 19 & 25</div>
         </div>
     </div>
     <script src="./index.js"></script>
